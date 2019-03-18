@@ -1,0 +1,20 @@
+/*
+
+  MEDIA QUERIES
+
+  Defaults are borrowed from Tachyons CSS
+
+  Set custom sizes in _breakpoint-sizes.less file
+
+  Default media query sizes:
+  not-small: 30em;
+  medium: between 30 and 60em;
+  large: Larger than 60em
+
+*/
+
+// Media Queries
+
+@custom-media --breakpoint-not-small screen and (min-width @bp-not-small-size);
+@custom-media --breakpoint-medium screen and (min-width: @bp-not-small-size) and (max-width: @bp-large-size);
+@custom-media --breakpoint-large screen and (min-width: @bp-large-size);
