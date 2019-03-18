@@ -12,6 +12,7 @@
     "declaration-block-no-duplicate-properties": null,
     "font-family-no-duplicate-names": null,
     "indentation": 2,
+    "no-duplicate-selectors": null,
     "number-leading-zero": "always",
     "number-no-trailing-zeros": true,
     "property-no-unknown": null,
