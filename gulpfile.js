@@ -6,6 +6,7 @@ const precss = require('precss');
 const rucksack = require('rucksack-css');
 
 const srcPath = './src/*.less';
+const watchPath = './src/**/*.less';
 
 gulp.task('css', () => {
   const processors = [precss({}), rucksack({})];
@@ -20,7 +21,7 @@ gulp.task('css', () => {
 gulp.task(
   'watch:css',
   gulp.series(['css'], () => {
-    gulp.watch(srcPath, gulp.series(['css']));
+    gulp.watch(watchPath, gulp.series(['css']));
   })
 );
 
