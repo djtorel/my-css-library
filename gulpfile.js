@@ -29,6 +29,8 @@ gulp.task('css:minify', () => {
     .pipe(gulp.dest('./build'));
 });
 
+gulp.task('build', gulp.series(['css'], ['css:minify']));
+
 gulp.task(
   'watch:css',
   gulp.series(['css'], () => {
