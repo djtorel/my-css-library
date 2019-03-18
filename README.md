@@ -23,5 +23,11 @@ npm install
 ## Compile
 
 ```bash
-gulp
+yarn run build
+```
+
+or
+
+```bash
+npm run build
 ```
