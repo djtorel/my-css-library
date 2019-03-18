@@ -1,0 +1,20 @@
+/*
+
+  BREAK POINT VARIABLES
+
+  Here are stored the media query breakpoint sizes
+  They should be set in em units
+
+  These variables will also be used for some other
+  responsive things like rucksacks responsive fonts
+
+  Default "not small" size is 30em;
+  Default "medium" size is ("not small" + "large") / 2
+  Default "larg" size is 60em;
+
+*/
+
+@breakpoint-not-small-size: 30em;
+@breakpoint-medium-size: (@breakpoint-not-small-size + @breakpoint-large-size) /
+  2;
+@breakpoint-large-size: 60em;
